@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+img {
+    width: 100%;
+}
+
+/* header */
+header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.header-cuotas {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.main-header-bottom-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header-bottom-bar a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.main-header-bottom-bar {
+    display: none
+}
+
+.logo {
+    width: 45%;
+}
+
+.barra-busqueda {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content:center;
+    align-content: center;
+    width: 50%;
+    border-radius: 10px;
+    height: 30px;
+    margin: 15px;
+    align-self: center;
+    position: relative;
+}
+
+.busqueda {
+    color: #666;
+    background-color: white;
+    width: 80%;
+    font-size: 12px;
+    padding: 8px 5px;
+    border: solid 1px white;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+#lupa {
+    color: black;
+    background-color: white;
+    border: solid 1px white;
+    width: 10%;
+    text-align: center;
+    padding: 5px 0px;
+    position: absolute;
+    right:50px;
+}
+
+#menu {
+    color: white;
+    background-color: #1259c3;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-left: 50%;
+    border-radius: 3px;
+}
+
+/* main */
+
+main {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.productos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    margin-bottom: 10px;
+    width: 100%;
+    transition: box-shadow 450ms;
+}
+
+article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article:hover .descripcion{
+    display: block
+}
+
+.productos {
+    background-color: white;
+    border-top: solid 0.5px #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+@keyframes vuelta {
+    100% {
+    transform: rotate(-90deg);
+    }
+}
+#camion {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    padding: 5px;
+    border-radius: 50%;
+    border: solid 1px #39b54a;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: rotate 450ms;
+}
+
+#camion:hover {
+    animation: vuelta 450ms;
+animation-fill-mode: forwards;
+}
+
+.titulares {
+    font-size: 24px;
+    color: #666;
+    margin: 20px 0px
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%
+}
+
+.descripcion {
+    font-size: 16px;
+    color: #666;
+    display: none
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mensajes-footer {
+    margin: 20px 15px;
+    width: 100%;
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: left;
+}
+#icon2 {
+    color: #1259c3;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#icon2:hover {
+    color: #EAC926;
+}
+
+/*formularios*/
+
+#login {
+    text-align: center;
+}
+
+.formularios div {
+    margin: 20px 0px 20px;
+    font-size:12px;
+}
+#text{
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+#nacimiento {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+}
+
+#Fecha {
+    font-weight: bold;
+}
+
+#radio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#opcionesRadio {
+    margin: 10px 30px;
+}
+
+#perfilUsuario {
+    font-weight: bold;
+    width:100%
+}
+ #categoriasInteres {
+    font-weight: bold;
+ }
+
+#checkbox {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#checkbox input {
+    width: 15px;
+    margin: 5px
+}
+
+#checkbox label {
+    width: 80%;
+}
+
+button {
+    color: white;
+    background-color: #1259c3;
+    text-align:center;
+    padding: 10px;
+    width: 50%;
+    border: solid 1px #1259c3;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #0022AA;
+    border: #0022AA;
+}
+
+@media (min-width: 768px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin: 10px
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .barra-busqueda {
+        width: 30%;
+    }
+
+    #menu {
+        display: none
+    }
+
+    .header-cuotas {
+        width: 30%;
+        margin-top: 20px;
+    }
+
+    .main-header-bottom-bar {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 20px;
+    }
+
+    .main-header-bottom-bar ul { 
+        display: flex;
+    }
+
+    .main-header-bottom-bar li {
+        margin: 0px 10px;
+    }
+
+    article {
+        width: 45%
+    }
+}
+
+@media (min-width: 1028px) {
+    .header-cuotas {
+        margin-top: 40px;
+    }
+
+    article {
+        width: 20%;
+    }
+
+    .precio {
+        width: 45%;
+    }
+
+    .descuentos {
+        width: 55%;
+    }
+
+    .mensajes-footer {
+        width: 30%
+    }
+} 
