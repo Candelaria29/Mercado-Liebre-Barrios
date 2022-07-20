@@ -3,8 +3,9 @@ const app = express()
 const path = require('path')
 const rutaPublic = path.resolve(__dirname, './public') 
 
-app.listen(3000, () => {
-    console.log('Servidor funcionando en: http://localhost:3000');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log('Servidor funcionando en: http://localhost:' + port);
 });
 
 app.use(express.static(rutaPublic))
